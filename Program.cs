@@ -6,7 +6,8 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-          
+            try
+            {
                 Console.WriteLine("КАЛЬКУЛЯТОР");
 
                 Console.WriteLine("Введите первое число:");
@@ -26,7 +27,17 @@ namespace ConsoleApp1
 
                     Console.WriteLine("Вывод:", nam1 - nam2);
                 }
-              
+                else if (s == "/")
+                {
+       
+                    Console.WriteLine("Вывод:", nam1 / nam2);
+                }
+                else if (s == "*")
+                {
+
+                    Console.WriteLine("Вывод:", nam1 * nam2);
+                }
+            } catch (Exception ex) { Console.WriteLine(ex.Message); }
           
         }
     }
