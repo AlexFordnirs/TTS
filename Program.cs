@@ -14,7 +14,9 @@ namespace ConsoleApp1
 
                 Console.WriteLine("Введите первое число:");
                 int nam2 = Convert.ToInt32(Console.ReadLine());
-               
+                Console.WriteLine("Введите знак:");
+                string s = Console.ReadLine();
+
           
         }
     }
