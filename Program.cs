@@ -6,7 +6,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            
+          
                 Console.WriteLine("КАЛЬКУЛЯТОР");
 
                 Console.WriteLine("Введите первое число:");
@@ -17,6 +17,16 @@ namespace ConsoleApp1
                 Console.WriteLine("Введите знак:");
                 string s = Console.ReadLine();
 
+                if (s == "+")
+                {
+                    Console.WriteLine("Вывод:", nam1 + nam2);
+                }
+                else if (s == "-")
+                {
+
+                    Console.WriteLine("Вывод:", nam1 - nam2);
+                }
+              
           
         }
     }
