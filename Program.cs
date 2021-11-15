@@ -57,6 +57,10 @@ namespace ConsoleApp1
                 {
                     Console.WriteLine("Вывод:", nam1 <= nam2);
                 }
+                else if (s=="^")
+                {
+                    Console.WriteLine("Вывод:", Math.Pow(nam1, nam2));
+                }
             } catch (Exception ex) { Console.WriteLine(ex.Message); }
           
         }
