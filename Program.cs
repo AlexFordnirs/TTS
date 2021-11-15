@@ -61,6 +61,14 @@ namespace ConsoleApp1
                 {
                     Console.WriteLine("Вывод:", Math.Pow(nam1, nam2));
                 }
+                else if ( s=="fak")
+                {
+                    for (int i = 1; i <= nam1; i++) 
+                    {
+                        nam2 = nam2 * i;
+                    }
+                    Console.WriteLine("Факториал:", nam1, "Равен:", nam2);
+                }
             } catch (Exception ex) { Console.WriteLine(ex.Message); }
           
         }
