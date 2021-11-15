@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace ConsoleApp1
 {
@@ -9,7 +10,7 @@ namespace ConsoleApp1
             try
             {
                 Console.WriteLine("КАЛЬКУЛЯТОР");
-
+                Thread.Sleep(4000);
                 Console.WriteLine("Введите первое число:");
                 int nam1 = Convert.ToInt32(Console.ReadLine());
 
@@ -20,7 +21,7 @@ namespace ConsoleApp1
 
                 if (s == "+")
                 {
-                    Console.WriteLine("Вывод:", nam1 + nam2);
+                    Console.WriteLine("Вывод:", nam1+nam2);
                 }
                 else if (s == "-")
                 {
