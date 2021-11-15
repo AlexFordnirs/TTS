@@ -29,13 +29,25 @@ namespace ConsoleApp1
                 }
                 else if (s == "/")
                 {
-       
-                    Console.WriteLine("Вывод:", nam1 / nam2);
+                    if (nam1 == 0 || nam2 == 0) { Console.WriteLine("Деление на 0 невозможно"); }
+                    else
+                    {
+                        Console.WriteLine("Вывод:", nam1 / nam2);
+                    }
+
                 }
                 else if (s == "*")
                 {
 
                     Console.WriteLine("Вывод:", nam1 * nam2);
+                }
+                else if (s==">")
+                {
+                    Console.WriteLine("Вывод:", nam1 > nam2);
+                }
+                else if ( s=="<")
+                {
+                    Console.WriteLine("Вывод:", nam1 < nam2);
                 }
             } catch (Exception ex) { Console.WriteLine(ex.Message); }
           
