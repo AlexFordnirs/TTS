@@ -1,10 +1,12 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.Threading;
 
 namespace ConsoleApp1
 {
     class Program
     {
+        private static readonly Logger Log = LogManager.GetCurrentClassLogger();
         static void Main(string[] args)
         {
             try
@@ -70,7 +72,14 @@ namespace ConsoleApp1
                     }
                     Console.WriteLine("Факториал:", nam1, "Равен:", nam2);
                 }
-            } catch (Exception ex) { Console.WriteLine(ex.Message); }
+                Log.Info("Log");
+                Log.Error("Log");
+                Log.Debug("Log");
+            } catch (Exception ex) { Console.WriteLine(ex.Message);
+                Log.Info("Log");
+                Log.Error("Log");
+                Log.Debug("Log");
+            }
           
         }
     }
